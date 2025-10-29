@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: test-idp-gitops
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: test-idp-gitops
@@ -15,4 +15,3 @@ spec:
       containers:
       - name: test
         image: nginx
-        
