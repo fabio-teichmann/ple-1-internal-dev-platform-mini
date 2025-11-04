@@ -11,7 +11,7 @@ spec:
   source: 
     repoURL: https://github.com/fabio-teichmann/ple-1-internal-dev-platform-mini.git
     targetRevision: HEAD 
-    path: manifests/smaple-app
+    path: manifests/sample-app
   destination: 
     server: https://kubernetes.default.svc
     namespace: default
