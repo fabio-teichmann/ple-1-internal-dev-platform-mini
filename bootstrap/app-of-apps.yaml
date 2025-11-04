@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1 
+kind: Application
+metadata:
+  name: app-of-apps 
+  namespace: argocd
+spec: 
+  project: default 
+  source:
+    repoURL: https://github.com/fabio-teichmann/ple-1-internal-dev-platform-mini.git 
+    path: apps
+    targetRevision: HEAD
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc 
+  syncPolicy:
+    automated: 
+      prune: true 
+      selfHeal: true 
