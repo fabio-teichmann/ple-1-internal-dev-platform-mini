@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-idp-gitops
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-idp-gitops
+  template:
+    metadata:
+      labels:
+        app: test-idp-gitops
+    spec:
+      containers:
+      - name: test
+        image: nginx
