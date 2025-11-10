@@ -10,7 +10,7 @@ spec:
     path: apps
     targetRevision: HEAD
     directory: 
-      recursive: true
+      recurse: true
   destination:
     namespace: default
     server: https://kubernetes.default.svc 
