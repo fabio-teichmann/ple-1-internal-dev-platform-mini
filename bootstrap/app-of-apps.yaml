@@ -9,6 +9,8 @@ spec:
     repoURL: https://github.com/fabio-teichmann/ple-1-internal-dev-platform-mini.git 
     path: apps
     targetRevision: HEAD
+    directory: 
+      recursive: true
   destination:
     namespace: default
     server: https://kubernetes.default.svc 

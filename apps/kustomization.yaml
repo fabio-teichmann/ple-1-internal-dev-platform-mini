@@ -1,3 +1,0 @@
-resources:
-  - monitoring/monitoring.yaml
-  - sample-app/idp-app-declarative.yaml
