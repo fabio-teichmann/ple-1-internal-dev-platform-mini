@@ -34,8 +34,7 @@ jobs:
             path: manifests/sample-app
           destination: 
             server: https://kubernetes.default.svc
-            namespace: default
-        EOF 
+            namespace: default 
 
     - name: Create Pull Request
       id: cpr
