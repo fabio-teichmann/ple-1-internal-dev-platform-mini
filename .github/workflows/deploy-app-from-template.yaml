@@ -7,8 +7,6 @@ on:
 jobs:
   create-pull-request:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
     steps:
     - uses: actions/checkout@v4
 
@@ -62,7 +60,7 @@ jobs:
           automated pr
         assignees: fabio-teichmann
         reviewers: fabio-teichmann
-        team-reviewers: |
-          developers
-          qa-team
+        # team-reviewers: |
+        #   developers
+        #   qa-team
         draft: false
